@@ -16,7 +16,7 @@ return (
 
        <li className = {itemStyle.join(" ")} onClick = {() => {props.funcAdd(props.opList) } }> 
            <img 
-           src={window.location.origin + props.icon}
+           src={process.env.PUBLIC_URL + props.icon}
            className = "dropdown-list__img"
            alt ={props.name}
            ></img>

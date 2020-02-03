@@ -117,7 +117,6 @@ form {
 
 @media( max-width: 885px){
     .payment-form {
-        position: fixed;
         width: 85%;
         padding: 50px 0px 76px;
     }     
@@ -139,7 +138,7 @@ form {
 @media( max-width: 495px){
   .payment{
     &-form {
-        width: 90%;
+        width: 100%;
     &__button{
         padding: 15px 93px !important;
     }

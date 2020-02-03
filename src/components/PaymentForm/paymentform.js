@@ -186,7 +186,7 @@ const sendStatusRandom = this.state.sendStatus[this.getRandomFloat(0,2)]
 
           <BtnExit return={this.props.return} />
         
-            <img src={this.props.steps[1].active ? this.props.select[0].img : null} className="payment-form__img"></img>
+            <img src={this.props.steps[1].active ? process.env.PUBLIC_URL + this.props.select[0].img : null} className="payment-form__img"></img>
           
             <div className="payment-form__title">Пополнение баланса</div>
             

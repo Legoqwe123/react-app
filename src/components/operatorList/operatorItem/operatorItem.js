@@ -1,11 +1,12 @@
 import React from 'react';
 import { Transition } from 'react-transition-group';
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 const OperatorItem = props => {
  
-   
- return( 
+  
+  return( 
        
   
   <Transition
@@ -15,20 +16,25 @@ const OperatorItem = props => {
         
        >
    
-       {state => <div 
-          className = {`operator-list__item ${state}`}
-          onClick = {()=> props.onSelect(props.operator)}
-         
+       {state => <Link 
+           activeClass="active"
+           to="root"
+           spy={true}
+           smooth={true}
+           duration= {600}
+           className = {`operator-list__item ${state}`}
+           onClick = {()=> props.onSelect(props.operator)}
+           
          > 
      
         <img 
         
           className = 'operator-list__image' 
           alt ={props.name} 
-          src={window.location.origin + props.src}>
+          src= {process.env.PUBLIC_URL + props.src}>
 
        </img> 
-         </div>}
+         </Link >}
        
        </Transition>
      
