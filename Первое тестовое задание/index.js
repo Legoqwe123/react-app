@@ -1,3 +1,4 @@
+  
 /*Исходники*/
 
 function func(s, a, b) {
@@ -39,4 +40,3 @@ function func(s, a, b) {
   
     return Math.max(aIndex, bIndex);
   }
-  
