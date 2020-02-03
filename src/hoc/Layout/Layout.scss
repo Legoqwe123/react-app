@@ -1,9 +1,7 @@
 main {
     margin: 0 auto;
     width: 1440px;
-    height: 100vh;
-}
-
+  }
 .App-text {
     text-align: start;
   }
@@ -12,4 +10,21 @@ main {
     text-align: start;
   }
   
+@media(max-width: 1480px){
+   main {
+    width: 1140px;
+   }
+}
+
+@media(max-width: 1160px){
+  main {
+   width: 992px;
+  }
+}
+
+@media(max-width: 992px){
+  main {
+   width: 90%;
+  }
+}
 

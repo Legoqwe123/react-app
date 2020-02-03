@@ -19,6 +19,7 @@ const StepList = props => (
                      active = {item.active}
                      step = {item.step}
                     
+                    
                     />
                )
            })

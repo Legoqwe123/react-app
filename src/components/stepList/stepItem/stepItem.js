@@ -1,10 +1,8 @@
 import React from 'react';
-import   './stepItem.scss';
 
 const stepItem = props => {
    
-
-
+  
   const divStyle = ['step-list__item'];
   
   if (props.active === true){

@@ -34,9 +34,84 @@ li {
   margin-top: 70px;
   font-size: 30px;
   color: #333333;
+  font-weight: 200;
 }
 
 .App-title {
   font-weight: 500;
   font-size: 50px;
+  color: #6916A1;
 }
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#root {
+  position: relative;
+}
+#root::after{
+  content: "";
+  position: absolute;
+  left: -405px;
+  top: 342px;
+  background: radial-gradient(50% 50% at 50% 50%, #AB76CA 0%, #6916A1 100%);
+  width: 604px;
+  height: 604px;
+  border-radius: 50%;
+  z-index: -1;
+}
+#root::before{
+  content: "";
+  position: absolute;
+  right: -8px;
+  top: 0px;
+  background: url('./Group3.jpg')no-repeat;
+  width: 940.51px;
+  height: 1045.51px;
+  z-index: -1;
+}
+
+@media(max-width: 1460px){
+   #root::after{
+       transform: scale(0.75);
+     }
+   #root::before{
+        right: -10rem;
+        top: -10rem;
+        transform: scale(0.7);
+     }
+   }
+
+@media(max-width: 1160px){
+  .App-text {
+    text-align: end !important;
+    color: #F5F5F5;
+  }
+  
+  .App-title {
+    color: #fff;
+    text-align: end !important;
+  }
+}
+
+@media(max-width: 665px){
+  .App-text {
+    margin-top: 70px;
+    font-size: 30px;
+  }
+  .App-title {
+     font-size: 34px;
+  }
+  #root::after{
+    content: none;
+  }
+  #root::before{
+    right: -7rem;
+    top: 0rem;
+    transform: scale(0.8);
+  }
+}
+
+
