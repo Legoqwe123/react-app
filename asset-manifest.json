@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-app/static/css/main.3bff4aaf.chunk.css",
+    "main.js": "/react-app/static/js/main.9aa8a9e5.chunk.js",
+    "main.js.map": "/react-app/static/js/main.9aa8a9e5.chunk.js.map",
+    "runtime-main.js": "/react-app/static/js/runtime-main.79327673.js",
+    "runtime-main.js.map": "/react-app/static/js/runtime-main.79327673.js.map",
+    "static/js/2.10cf6b63.chunk.js": "/react-app/static/js/2.10cf6b63.chunk.js",
+    "static/js/2.10cf6b63.chunk.js.map": "/react-app/static/js/2.10cf6b63.chunk.js.map",
+    "index.html": "/react-app/index.html",
+    "precache-manifest.a2b05ebaf0464b187ac0984d36bf9402.js": "/react-app/precache-manifest.a2b05ebaf0464b187ac0984d36bf9402.js",
+    "service-worker.js": "/react-app/service-worker.js",
+    "static/css/main.3bff4aaf.chunk.css.map": "/react-app/static/css/main.3bff4aaf.chunk.css.map",
+    "static/js/2.10cf6b63.chunk.js.LICENSE": "/react-app/static/js/2.10cf6b63.chunk.js.LICENSE",
+    "static/media/index.css": "/react-app/static/media/Group3.dc05a86c.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.79327673.js",
+    "static/js/2.10cf6b63.chunk.js",
+    "static/css/main.3bff4aaf.chunk.css",
+    "static/js/main.9aa8a9e5.chunk.js"
+  ]
+}
