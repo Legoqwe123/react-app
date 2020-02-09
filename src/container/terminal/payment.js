@@ -93,7 +93,7 @@ const Payment = () => {
         <Dropdown funcAdd={addOperator} opList={operators} />
       </div>
 
-      {!steps[1].active || !steps[2].active ? (
+      {steps[1].active === false ? (
         <React.Fragment>
           <p className="App-text">Для оплаты</p>
           <h1 className="App-title">Выберите оператора</h1>
