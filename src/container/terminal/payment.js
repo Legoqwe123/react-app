@@ -93,16 +93,12 @@ const Payment = () => {
         <Dropdown funcAdd={addOperator} opList={operators} />
       </div>
 
-      <Route
-        path={`/`}
-        exact={true}
-        render={() => (
-          <React.Fragment>
-            <p className="App-text">Для оплаты</p>
-            <h1 className="App-title">Выберите оператора</h1>
-          </React.Fragment>
-        )}
-      ></Route>
+      {!steps[1].active || !steps[2].active ? (
+        <React.Fragment>
+          <p className="App-text">Для оплаты</p>
+          <h1 className="App-title">Выберите оператора</h1>
+        </React.Fragment>
+      ) : null}
 
       <Form>
         <Route
