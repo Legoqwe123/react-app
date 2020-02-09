@@ -1,35 +1,13 @@
 import React from 'react';
 import StepItem from './stepItem/stepItem';
-import  './stepList.scss';
+import { ListStyle } from './stepListStyled';
 
+const StepList = props => (
+  <ListStyle>
+    {props.steps.map((item, index) => {
+      return <StepItem key={index} active={item.active} step={item.step} />;
+    })}
+  </ListStyle>
+);
 
-const StepList = props => ( 
-
-     
-     
-      <ul className='step-list'>
-       {
-           props.steps.map((item,index) => {
-               
-               return(
-                    
-                    <StepItem
-   
-                     key = {index}
-                     active = {item.active}
-                     step = {item.step}
-                    
-                    
-                    />
-               )
-           })
-       }
-      </ul>
-
-     
-
-   
-)
-
-
-export default StepList
+export default StepList;

@@ -31,13 +31,19 @@ li {
 }
 
 .App-text {
+  text-align: start;
   margin-top: 70px;
   font-size: 30px;
   color: #333333;
   font-weight: 200;
 }
 
+#root{
+  height: 100vh;
+}
+
 .App-title {
+  text-align: start;
   font-weight: 500;
   font-size: 50px;
   color: #6916A1;
@@ -112,6 +118,10 @@ li {
     top: 0rem;
     transform: scale(0.8);
   }
+  header {
+    display: block;
+  }
 }
+
 
 

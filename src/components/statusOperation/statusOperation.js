@@ -1,108 +1,67 @@
-import React, { Component } from 'react';
-import "./statusOperation.scss";
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
+import { Status } from './statusStyled';
 
-class StatusOperation extends Component {
+const StatusOperation = props => {
+  const [timer, setTimer] = useState({
+    start: 5,
+    end: 0,
+    tick: 1,
+  });
 
-    state = {
-        
-        timer: {
-            start: 4,
-            end: 0,
-            tick: 1,
-        }
-    }
+  function startTimer() {
+    let copyTimer = { ...timer };
 
-    startTimer = () => {
+    let timerId = setInterval(() => {
+      copyTimer.start -= 1;
 
-        let timer = { ...this.state.timer };
+      if (copyTimer.start === copyTimer.end) {
+        copyTimer.start = 4;
+        clearInterval(timerId);
+      }
 
-        let timerId = setInterval(() => {
+      setTimer({
+        ...copyTimer,
+      });
+    }, timer.tick * 1000);
+  }
 
-            timer.start -= 1;
+  function closeWindow() {
+    setTimeout(() => {
+      props.returnMain();
+    }, timer.start * 1000);
+  }
 
-            if (timer.start === timer.end) {
-                timer.start = 5
-                clearInterval(timerId)
-            }
+  if (timer.start == 1) {
+    return <Redirect to="/" />;
+  }
 
-            this.setState({
-                timer
-            })
+  return (
+    <React.Fragment>
+      {props.steps[2].active === true ? (
+        <React.Fragment>
+          {props.status.status === true ? closeWindow() : null}
 
-        }, this.state.timer.tick * 1000);
+          <Status>
+            <div>{props.status.msg}</div>
 
+            {props.status.status === true ? (
+              <React.Fragment>
+                {startTimer()}
+                <p>
+                  Вы будете перенаправлены на главную страницу через
+                  <br />
+                  {timer.start - 1}
+                </p>
+              </React.Fragment>
+            ) : (
+              <button onClick={props.secondStep}>К терминалу</button>
+            )}
+          </Status>
+        </React.Fragment>
+      ) : null}
+    </React.Fragment>
+  );
+};
 
-    }
-
-
-    closeWindow = () => {
-
-        setTimeout(() => {
-
-            this.props.returnMain()
-
-        }, this.state.timer.start * 1000)
-
-
-    }
-
-    render() {
-
-        return (
-
-            <React.Fragment>
-
-
-                {this.props.steps[2].active === true
-
-                    ?
-
-                    <React.Fragment>
-
-                        {this.props.status.status === true
-
-                            ? this.closeWindow()
-
-                            : null
-
-                        }
-
-                        <div className='status-wrapper'>
-
-                            <p className="status-message">{this.props.status.msg}</p>
-
-                            {this.props.status.status === true
-
-                                ? <React.Fragment>
-
-                                    {this.startTimer()}
-                                    <p className="status-timer">Вы будете перенаправлены на главную страницу через<br />{this.state.timer.start}</p>
-
-                                </React.Fragment>
-
-                                : <button className="status-button" onClick={this.props.secondStep} >К терминалу</button>
-
-                            }
-
-                        </div>
-
-                    </React.Fragment>
-
-                    : null
-
-                }
-
-
-            </React.Fragment>
-
-
-        )
-
-
-    }
-
-
-
-}
-
-export default StatusOperation
+export default StatusOperation;

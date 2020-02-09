@@ -1,171 +1,132 @@
-import React from 'react';
-import { Component } from "react";
+import React, { useState } from 'react';
+import { Route } from 'react-router-dom';
 import OperatorList from '../../components/operatorList/operatorList';
-import StepList from '../../components/stepList/stepList'
+import StepList from '../../components/stepList/stepList';
 import PaymentForm from '../../components/PaymentForm/paymentform';
 import Dropdown from '../../components/dropDown/dropdown';
 import Backdrop from '../../components/backdrop/backdrop';
+import { Form } from '../../components/PaymentForm/styledForm';
 
+const Payment = () => {
+  const [operatorID, setOperator] = useState(null);
 
-class Payment extends Component {
+  const [operators, setOperators] = useState([
+    { name: 'МТС', img: '/img/mts.jpg', added: true, icon: '/img/icons/mts_icon.png', id: 0 },
+    {
+      name: 'Билайн',
+      img: '/img/beeline.jpg',
+      added: true,
+      icon: '/img/icons/beeline_icon.png',
+      id: 1,
+    },
+    {
+      name: 'Мегафон',
+      img: '/img/megaphon.jpg',
+      added: true,
+      icon: '/img/icons/megafon__icon.png',
+      id: 2,
+    },
+    {
+      name: 'ТЕЛЕ 2',
+      img: '/img/tele2.jpg',
+      added: false,
+      icon: '/img/icons/tele2_icon.png',
+      id: 3,
+    },
+    { name: 'Yota', img: '/img/yota.jpg', added: false, icon: '/img/icons/yota_icon.png', id: 4 },
+  ]);
 
+  const [steps, setSteps] = useState([
+    { step: 1, active: true },
+    { step: 2, active: false },
+    { step: 3, active: false },
+  ]);
 
-  state = {
-
-    operators: [
-      { name: "МТС",  img: '/img/mts.jpg', added: true, icon: '/img/icons/mts_icon.png' },
-      { name: "Билайн",  img: '/img/beeline.jpg', added: true , icon: '/img/icons/beeline_icon.png' },
-      { name: "Мегафон",  img: '/img/megaphon.jpg', added: true , icon: '/img/icons/megafon__icon.png' },
-      { name: "ТЕЛЕ 2",  img: '/img/tele2.jpg', added: false , icon: '/img/icons/tele2_icon.png' },
-      { name: "Yota",  img: '/img/yota.jpg', added: false , icon: '/img/icons/yota_icon.png' }
-    ],
-
-    steps: [
-
-      { step: 1, active: true },
-      { step: 2, active: false },
-      { step: 3, active: false }
-
-    ]
-
+  function secondStep() {
+    setSteps(steps =>
+      steps.map((item, index) =>
+        index <= 1 ? { step: item.step, active: true } : { step: item.step, active: false },
+      ),
+    );
   }
 
-  secondStep = () => {
-
-    const steps = this.state.steps;
-
-    steps[1].active = true;
-    steps[2].active = false
-
-    this.setState({
-      steps
-    })
-
+  function lastStep() {
+    setSteps(steps => steps.map(item => ({ ...item, active: true })));
   }
 
-  lastStep = () => {
-    const steps = this.state.steps;
-
-    steps[2].active = true;
-
-    this.setState({
-      steps
-    })
+  function returnMainPage() {
+    setSteps(steps =>
+      steps.map((item, index) =>
+        index == 0 ? { step: item.step, active: true } : { step: item.step, active: false },
+      ),
+    );
   }
 
-  returnMainPage = () => {
+  function onSelectOperator(op) {
+    let name = op.name;
 
-    this.setState({
-      steps: [
-        { step: 1, active: true },
-        { step: 2, active: false },
-        { step: 3, active: false }
-      ]
+    secondStep();
 
-    })
-
+    setOperator(name);
   }
 
-  onSelectOperator = op => {
+  function addOperator(operator) {
+    const newOperators = [...operators];
+    const indx = operator.id;
 
-    const name = op.name;
-
-    this.secondStep();
-
-    this.setState({
-      active: name
-    })
-
-  }
-
-  addOperator = operator => {
-    
-    const stateAdd = operator;
-
-    if (operator.name === "ТЕЛЕ 2" || operator.name === "Yota"){
-      stateAdd.added ? stateAdd.added = false : stateAdd.added = true
+    if (operator.name === 'ТЕЛЕ 2' || operator.name === 'Yota') {
+      newOperators[indx].added
+        ? (newOperators[indx] = { ...newOperators[indx], added: false })
+        : (newOperators[indx] = { ...newOperators[indx], added: true });
     }
-    
-    this.setState({
-      operator: stateAdd
-    })
-     
+
+    setOperators(newOperators);
   }
-
-  render() {
-
-    const operators = this.state.operators;
-    const selectOp = operators.filter(item => item.name === this.state.active);
 
   return (
-      
-      
     <React.Fragment>
-  
-       {
-       
-       this.state.steps[2].active === true 
-       ? <Backdrop/>
-       : null
-       
-       }
+      {steps[2].active === true ? <Backdrop /> : null}
 
-        <div className="header">
+      <div className="header">
+        <StepList steps={steps} />
 
-        <StepList
-            steps={this.state.steps}
-          />
+        <Dropdown funcAdd={addOperator} opList={operators} />
+      </div>
 
-          <Dropdown 
-            funcAdd = {this.addOperator}
-            opList = {operators}
-             />
-
-        </div>
-
-
-        {(this.state.steps[1].active || this.state.steps[2].active)
-
-          ? null
-
-          : <React.Fragment>
+      <Route
+        path={`/`}
+        exact={true}
+        render={() => (
+          <React.Fragment>
             <p className="App-text">Для оплаты</p>
             <h1 className="App-title">Выберите оператора</h1>
-           </React.Fragment>
+          </React.Fragment>
+        )}
+      ></Route>
 
-        }
-
-
-
-
-        <div className="form-wrapper">
-
-            
+      <Form>
+        <Route
+          path="/form/:operatorID"
+          render={({ match }) => {
+            const { operatorID } = match.params;
+            return (
               <PaymentForm
-                return={this.returnMainPage}
-                steps={this.state.steps}
-                select={selectOp}
-                success = {this.lastStep}
-                secondStep = {this.secondStep}
+                itemId={operatorID}
+                items={operators}
+                step={steps}
+                return={returnMainPage}
+                success={lastStep}
+                secondStep={secondStep}
               />
-             
+            );
+          }}
+        ></Route>
+      </Form>
+      <div className="operator">
+        <OperatorList operator={operators} onSelectOp={onSelectOperator} />
+      </div>
+    </React.Fragment>
+  );
+};
 
-        </div>
-
-        <div className="operator">
-
-          <OperatorList
-            operator={operators}
-            onSelectOp={this.onSelectOperator}
-          />
-
-
-        </div>
-      </React.Fragment>
-
-    )
-  }
-
-}
-
-export default Payment
+export default Payment;

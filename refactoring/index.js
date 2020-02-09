@@ -35,8 +35,8 @@ function func(s, a, b) {
   
   function func1(str, a, b) {
     
-    let aIndex = str.indexOf(a, 1);
-    let bIndex = str.indexOf(b, 1);
+    let aIndex = str.lastIndexOf(a);
+    let bIndex = str.lastIndexOf(b);
   
     return Math.max(aIndex, bIndex);
   }

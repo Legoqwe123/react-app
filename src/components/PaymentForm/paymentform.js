@@ -1,214 +1,156 @@
-import React from 'react';
-import  './form.scss';
+import React, { useState } from 'react';
 import BtnExit from '../UI/btnExit/btnExit';
 import FormInput from '../UI/input/input';
 import StatusOperation from '../statusOperation/statusOperation';
-import { Transition } from 'react-transition-group';
+import { FormTitle } from './styledForm';
 
+const PaymentForm = props => {
+  const sendStatus = [
+    { status: true, msg: 'Операция прошла успешно' },
 
-class PaymentForm extends React.Component {
+    { status: false, msg: 'Произошла ошибка, попробуйте еще раз' },
+  ];
 
-   state = {
+  const [formControls, setFormContorls] = useState({
+    phone: {
+      value: '',
+      errorMessage: 'Введите корректный номер телефона',
+      type: 'tel',
+      mask: '+8(999)-999-99-99',
+      maskChar: '_',
+      placeholder: 'Номер телефона',
+    },
 
-    sendStatus : [
-      
-      { status: true , msg: "Операция прошла успешно"},
-     
-      { status: false , msg: "Произошла ошибка, попробуйте еще раз" }
-   
-    ] ,
+    cost: {
+      value: '',
+      errorMessage: 'Введите сумму от 1 до 1000 рублей',
+      type: 'text',
+      placeholder: 'Введите сумму от 1 до 1000 рублей',
+      mask: '9999',
+      maskChar: null,
+    },
+  });
 
-   formControls: {
-      phone: {
-          value: '',
-          errorMessage: "Введите корректный номер телефона",
-          type: "tel",
-          mask:"+8\(999)-999-99-99",
-          maskChar: '_',
-          placeholder: "Номер телефона",
-        },
-        
-        cost: {
-          value: '',
-          errorMessage: "Введите сумму от 1 до 1000 рублей",
-          type: "text",
-          placeholder: "Введите сумму от 1 до 1000 рублей",
-          mask:"9999",
-          maskChar: null,
-        }
-   }
+  const copyFormControls = { ...formControls };
+
+  function clearInputs() {
+    const keyForms = Object.keys(copyFormControls);
+
+    keyForms.map(item => {
+      copyFormControls[item].value = '';
+    });
+
+    setFormContorls({
+      copyFormControls,
+    });
   }
 
+  function submitHandler(event) {
+    event.preventDefault();
 
+    const keyForms = Object.keys(copyFormControls);
 
-clearInputs = () => {
-   
-  const formControls = {...this.state.formControls};
-  const keyForms =  Object.keys(formControls);
-  
-  keyForms.map(item  => {
-     
-    formControls[item].value = ""
-  
- })
+    keyForms.map(item => {
+      copyFormControls[item] === copyFormControls.phone
+        ? validatePhone(copyFormControls[item], 11)
+        : validateCost(copyFormControls[item], 1000);
+    });
 
- this.setState({
-  formControls
- })
-
-}
-
-
-submitHandler = event => {
-  
-  event.preventDefault();
- 
-  const formControls = {...this.state.formControls};
-  const keyForms =  Object.keys(formControls);
-
-  keyForms.map(item  => {
-    
-     formControls[item] === this.state.formControls.phone
-    
-      ? this.validatePhone(formControls[item], 11) 
-      : this.validateCost(formControls[item], 1000)
-    
-  })
-
-  if (formControls.phone.validate === true && formControls.cost.validate === true){
-      this.props.success();
-      this.clearInputs();
+    if (formControls.phone.validate === true && formControls.cost.validate === true) {
+      props.success();
+      clearInputs();
     }
 
-this.setState({
-    formControls
-  })
-
-}
-
-getRandomFloat(min, max) {
-  return Math.floor(Math.random() * (max - min) + min);
-}
-
-validatePhone(inputValue, valid) {
-
- const value = inputValue.value.split(/[^0-9,]/).join('').trim();
-  
-  
- if (value.length === valid){
-    inputValue.validate = true;
-  } else {
-    inputValue.validate = false;
-  }
-  
-}
-
-validateCost(inputValue, valid){
-  
-  const value = inputValue.value.split(/[^0-9,]/).join('').trim();
-
-  if (value >=1 && value <= valid ){
-    inputValue.validate = true;
-  } else {
-    inputValue.validate = false;
+    setFormContorls({ ...copyFormControls });
   }
 
-}
-
-onChange = (event,name) => {
-  
-  const formControls = {...this.state.formControls};
-  const control = {...formControls[name]};
-  control.value  = event.target.value;
-  formControls[name] = control
-  
-  this.setState({
-    formControls
-  })
-
-}
-
-  renderInputs(){
-    
-    
-     return Object.keys(this.state.formControls).map((controlName, index) => {
-      
-      const control = this.state.formControls[controlName]
-      
-      return(
-         <FormInput
-          
-          key = {controlName + index}
-          type = {control.type}
-          value = {control.value}
-          valid = {control.validate}
-          errMsg = {control.errorMessage}
-          shouldValidate = {control.validation}
-          placeholder = {control.placeholder}
-          mask = {control.mask}
-          mskChar = {control.maskChar}
-          onChangs = { event => this.onChange(event,controlName)}
-         
-          />
-       )
-  
-  
-   
-      });
- 
+  function getRandomFloat(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
   }
-  
-render() {
 
-  
-const sendStatusRandom = this.state.sendStatus[this.getRandomFloat(0,2)]
-  
+  function validatePhone(inputValue, valid) {
+    const value = inputValue.value
+      .split(/[^0-9,]/)
+      .join('')
+      .trim();
+
+    if (value.length === valid) {
+      inputValue.validate = true;
+    } else {
+      inputValue.validate = false;
+    }
+  }
+
+  function validateCost(inputValue, valid) {
+    const value = inputValue.value
+      .split(/[^0-9,]/)
+      .join('')
+      .trim();
+
+    if (value >= 1 && value <= valid) {
+      inputValue.validate = true;
+    } else {
+      inputValue.validate = false;
+    }
+  }
+
+  function onChange(event, name) {
+    const control = { ...copyFormControls[name] };
+    control.value = event.target.value;
+    copyFormControls[name] = control;
+
+    setFormContorls({ ...copyFormControls });
+  }
+
+  function renderInputs() {
+    return Object.keys(formControls).map((controlName, index) => {
+      const control = formControls[controlName];
+
+      return (
+        <FormInput
+          key={controlName + index}
+          type={control.type}
+          value={control.value}
+          valid={control.validate}
+          errMsg={control.errorMessage}
+          shouldValidate={control.validation}
+          placeholder={control.placeholder}
+          mask={control.mask}
+          mskChar={control.maskChar}
+          onChangs={event => onChange(event, controlName)}
+        />
+      );
+    });
+  }
+
+  const sendStatusRandom = sendStatus[getRandomFloat(0, 2)];
+  const select = props.items.filter(item => item.name === props.itemId);
+  const [item] = select;
+
   return (
-
-
     <React.Fragment>
-     
-      <StatusOperation 
-         secondStep = {this.props.secondStep}
-         returnMain = {this.props.return}
-         steps = {this.props.steps}
-         status = {sendStatusRandom}
-       />
+      <StatusOperation
+        secondStep={props.secondStep}
+        returnMain={props.return}
+        steps={props.step}
+        status={sendStatusRandom}
+      />
 
-      
-      <Transition
-        in={this.props.steps[1].active}
-        timeout={600}
-      >
+      <form className={`payment-form`} onSubmit={submitHandler}>
+        <BtnExit return={props.return} />
 
-        {state =>
-          <form className={`payment-form ${state}`} onSubmit={this.submitHandler}>
+        <img src={process.env.PUBLIC_URL + item.img} className="payment-form__img"></img>
 
-          <BtnExit return={this.props.return} />
-        
-            <img src={this.props.steps[1].active ? process.env.PUBLIC_URL + this.props.select[0].img : null} className="payment-form__img"></img>
-          
-            <div className="payment-form__title">Пополнение баланса</div>
-            
-            {this.renderInputs()}
-            
-            
-           <button type="submit" className="payment-form__button">ОПЛАТИТЬ</button>
-          </form>
+        <FormTitle>Пополнение баланса</FormTitle>
 
-          
-        }
-        
+        {renderInputs()}
 
-       </Transition>
-      </React.Fragment>
-     )
-   
-  }
+        <button type="submit" className="payment-form__button">
+          ОПЛАТИТЬ
+        </button>
+      </form>
+    </React.Fragment>
+  );
+};
 
-
-
-
-}
-
-export default PaymentForm
+export default PaymentForm;
