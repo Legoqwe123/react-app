@@ -93,6 +93,5 @@
     "*.{ts,tsx}": [
       "eslint --fix"
     ]
-  },
-  "homepage": "https://Legoqwe123.github.io/react-app"
+  }
 }
