@@ -1,0 +1,59 @@
+{
+  "personal": [
+    { "seats": 4, "bodilyInjury": 0.003, "propertyDamage": 0.0035 },
+    { "seats": 5, "bodilyInjury": 0.003, "propertyDamage": 0.0035 },
+    { "seats": 6, "bodilyInjury": 0.003, "propertyDamage": 0.0035 },
+    { "seats": 7, "bodilyInjury": 0.003, "propertyDamage": 0.0035 },
+    { "seats": 8, "bodilyInjury": 0.0045, "propertyDamage": 0.005 },
+    { "seats": 15, "bodilyInjury": 0.0045, "propertyDamage": 0.005 },
+    { "seats": 16, "bodilyInjury": 0.0045, "propertyDamage": 0.005 },
+    { "seats": 24, "bodilyInjury": 0.006, "propertyDamage": 0.0065 },
+    { "seats": 25, "bodilyInjury": 0.006, "propertyDamage": 0.0065 },
+    { "seats": 30, "bodilyInjury": 0.0075, "propertyDamage": 0.008 },
+    { "seats": 40, "bodilyInjury": 0.0075, "propertyDamage": 0.008 },
+    { "seats": 50, "bodilyInjury": 0.0075, "propertyDamage": 0.008 },
+    { "seats": 54, "bodilyInjury": 0.0075, "propertyDamage": 0.008 }
+  ],
+  "pickup": [
+    { "seats": 4, "bodilyInjury": 0.006, "propertyDamage": 0.65 },
+    { "seats": 5, "bodilyInjury": 0.006, "propertyDamage": 0.65 },
+    { "seats": 6, "bodilyInjury": 0.006, "propertyDamage": 0.65 },
+    { "seats": 7, "bodilyInjury": 0.006, "propertyDamage": 0.65 },
+    { "seats": 8, "bodilyInjury": 0.006, "propertyDamage": 0.65 }
+  ],
+  "taxi": [
+    { "seats": 5, "bodilyInjury": 0.012, "propertyDamage": 0.006 },
+    { "seats": 7, "bodilyInjury": 0.012, "propertyDamage": 0.006 },
+    { "seats": 8, "bodilyInjury": 0.015, "propertyDamage": 0.009 }
+  ],
+  "commercial": [
+    { "seats": 4, "bodilyInjury": 0.008, "propertyDamage": 0.004 },
+    { "seats": 5, "bodilyInjury": 0.008, "propertyDamage": 0.004 },
+    { "seats": 6, "bodilyInjury": 0.008, "propertyDamage": 0.004 },
+    { "seats": 7, "bodilyInjury": 0.008, "propertyDamage": 0.004 },
+    { "seats": 8, "bodilyInjury": 0.01, "propertyDamage": 0.006 },
+    { "seats": 15, "bodilyInjury": 0.01, "propertyDamage": 0.006 },
+    { "seats": 16, "bodilyInjury": 0.01, "propertyDamage": 0.006 },
+    { "seats": 24, "bodilyInjury": 0.014, "propertyDamage": 0.008 },
+    { "seats": 25, "bodilyInjury": 0.014, "propertyDamage": 0.008 },
+    { "seats": 30, "bodilyInjury": 0.016, "propertyDamage": 0.01 },
+    { "seats": 40, "bodilyInjury": 0.016, "propertyDamage": 0.01 },
+    { "seats": 50, "bodilyInjury": 0.016, "propertyDamage": 0.01 },
+    { "seats": 54, "bodilyInjury": 0.016, "propertyDamage": 0.01 }
+  ],
+  "trucks": [
+    {
+      "tonnage": "Under 3 tons",
+      "bodilyInjury": 0.005,
+      "propertyDamage": 0.004
+    },
+    { "tonnage": "3-8 tons", "bodilyInjury": 0.006, "propertyDamage": 0.008 },
+    { "tonnage": "8-15 tons", "bodilyInjury": 0.008, "propertyDamage": 0.012 },
+    {
+      "tonnage": "Above 15 tons",
+      "bodilyInjury": 0.008,
+      "propertyDamage": 0.012
+    },
+    { "tonnage": "Tractors", "bodilyInjury": 0.008, "propertyDamage": 0.012 }
+  ]
+}

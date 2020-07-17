@@ -1,0 +1,473 @@
+[
+  {
+    "company": "PTI Insurance",
+    "packages": [
+      {
+        "name_vi": "Gói Bạc",
+        "name_en": "Silver Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 278000000,
+          "Quyền lợi Ngoại trú": 5000000,
+          "Quyền lợi Nội trú": 200000000,
+          "Chăm sóc răng": 3000000,
+          "Thai sản & sinh đẻ": 3000000,
+          "Tử vong/Thương tật vĩnh viễn do ốm bệnh": 20000000
+        },
+        "benefits_en": {
+          "Total coverage": 278000000,
+          "Outpatient cover": 5000000,
+          "Inpatient cover": 200000000,
+          "Dental": 3000000,
+          "Maternity": 3000000,
+          "Death/Permanent disability caused by illness": 20000000
+        },
+        "prices": {
+          "5-15": 2625300,
+          "16-35": 2495700,
+          "36-40": 2495700,
+          "41-45": 2495700,
+          "46-60": 2728800
+        }
+      },
+      {
+        "name_vi": "Gói Vàng",
+        "name_en": "Gold Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 492000000,
+          "Quyền lợi Ngoại trú": 7000000,
+          "Quyền lợi Nội trú": 350000000,
+          "Chăm sóc răng": 5000000,
+          "Thai sản & sinh đẻ": 7000000,
+          "Tử vong/Thương tật vĩnh viễn do ốm bệnh": 30000000
+        },
+        "benefits_en": {
+          "Total coverage": 492000000,
+          "Outpatient cover": 7000000,
+          "Inpatient cover": 350000000,
+          "Dental": 5000000,
+          "Maternity": 7000000,
+          "Death/Permanent disability caused by illness": 30000000
+        },
+        "prices": {
+          "5-15": 4054500,
+          "16-35": 3838500,
+          "36-40": 3838500,
+          "41-45": 3838500,
+          "46-60": 4189500
+        }
+      },
+      {
+        "name_vi": "Gói Bạch kim",
+        "name_en": "Platinum Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 907000000,
+          "Quyền lợi Ngoại trú": 1000000,
+          "Quyền lợi Nội trú": 650000000,
+          "Chăm sóc răng": 7000000,
+          "Thai sản & sinh đẻ": 15000000,
+          "Tử vong/Thương tật vĩnh viễn do ốm bệnh": 40000000
+        },
+        "benefits_en": {
+          "Total coverage": 907000000,
+          "Outpatient cover": 1000000,
+          "Inpatient cover": 650000000,
+          "Dental": 7000000,
+          "Maternity": 15000000,
+          "Death/Permanent disability caused by illness": 40000000
+        },
+        "prices": {
+          "5-15": 6046200,
+          "16-35": 5694300,
+          "36-40": 5694300,
+          "41-45": 5694300,
+          "46-60": 5694300
+        }
+      }
+    ]
+  },
+  {
+    "company": "VietinBank Insurance",
+    "packages": [
+      {
+        "name_vi": "Gói Đồng",
+        "name_en": "Bronze Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 92500000,
+          "Quyền lợi Ngoại trú": 0,
+          "Quyền lợi Nội trú": 12500000,
+          "Trợ cấp nằm viện do tai nạn": 1500000
+        },
+        "benefits_en": {
+          "Total coverage": 92500000,
+          "Outpatient cover": 50000000,
+          "Inpatient cover": 12500000,
+          "Medical expense due accident": 1500000
+        },
+        "prices": {
+          "7-9": 351000,
+          "10-18": 336600,
+          "19-30": 322200,
+          "31-40": 351000,
+          "41-50": 365400,
+          "51-60": 379800
+        }
+      },
+      {
+        "name_vi": "Gói Bạc",
+        "name_en": "Silver Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 188000000,
+          "Quyền lợi Ngoại trú": 2500000,
+          "Quyền lợi Nội trú": 25000000,
+          "Nha khoa": 500000,
+          "Thai sản": 2500000,
+          "Trợ cấp nằm viện do tai nạn": 3000000
+        },
+        "benefits_en": {
+          "Total coverage": 188000000,
+          "Outpatient cover": 2500000,
+          "Inpatient cover": 25000000,
+          "Dental": 500000,
+          "Maternity": 2500000,
+          "Medical expense due accident": 3000000
+        },
+        "prices": {
+          "7-9": 702000,
+          "10-18": 673200,
+          "19-30": 644400,
+          "31-40": 702000,
+          "41-50": 730800,
+          "51-60": 759600
+        }
+      },
+      {
+        "name_vi": "Gói Titan",
+        "name_en": "Titan Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 376000000,
+          "Quyền lợi Ngoại trú": 5000000,
+          "Quyền lợi Nội trú": 50000000,
+          "Nha khoa": 1000000,
+          "Thai sản": 10000000,
+          "Trợ cấp nằm viện do tai nạn": 6000000
+        },
+        "benefits_en": {
+          "Total coverage": 376000000,
+          "Outpatient cover": 5000000,
+          "Inpatient cover": 50000000,
+          "Dental": 1000000,
+          "Maternity": 10000000,
+          "Medical expense due accident": 6000000
+        },
+        "prices": {
+          "7-9": 1404000,
+          "10-18": 1346400,
+          "19-30": 1288800,
+          "31-40": 1404000,
+          "41-50": 1461600,
+          "51-60": 1519200
+        }
+      },
+      {
+        "name_vi": "Gói Vàng",
+        "name_en": "Gold Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 937000000,
+          "Quyền lợi Ngoại trú": 10000000,
+          "Quyền lợi Nội trú": 125000000,
+          "Nha khoa": 2000000,
+          "Thai sản": 20000000,
+          "Trợ cấp nằm viện do tai nạn": 12000000
+        },
+        "benefits_en": {
+          "Total coverage": 937000000,
+          "Outpatient cover": 10000000,
+          "Inpatient cover": 125000000,
+          "Dental": 2000000,
+          "Maternity": 20000000,
+          "Medical expense due accident": 12000000
+        },
+        "prices": {
+          "7-9": 2891250,
+          "10-18": 2775375,
+          "19-30": 2659500,
+          "31-40": 2891250,
+          "41-50": 3007125,
+          "51-60": 3123000
+        }
+      },
+      {
+        "name_vi": "Gói Bạch kim",
+        "name_en": "Platinum Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 1874000000,
+          "Quyền lợi Ngoại trú": 20000000,
+          "Quyền lợi Nội trú": 250000000,
+          "Nha khoa": 4000000,
+          "Thai sản": 40000000,
+          "Trợ cấp nằm viện do tai nạn": 18000000
+        },
+        "benefits_en": {
+          "Total coverage": 1874000000,
+          "Outpatient cover": 20000000,
+          "Inpatient cover": 250000000,
+          "Dental": 4000000,
+          "Maternity": 40000000,
+          "Medical expense due accident": 18000000
+        },
+        "prices": {
+          "7-9": 5656500,
+          "10-18": 5424750,
+          "19-30": 5193000,
+          "31-40": 5656500,
+          "41-50": 5887800,
+          "51-60": 6120000
+        }
+      },
+      {
+        "name_vi": "Gói Kim Cương",
+        "name_en": "Diamond Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 3642000000,
+          "Quyền lợi Ngoại trú": 32000000,
+          "Quyền lợi Nội trú": 400000000,
+          "Nha khoa": 10000000,
+          "Thai sản": 64000000,
+          "Trợ cấp nằm viện do tai nạn": 60000000
+        },
+        "benefits_en": {
+          "Total coverage": 3642000000,
+          "Outpatient cover": 32000000,
+          "Inpatient cover": 400000000,
+          "Dental": 10000000,
+          "Maternity": 64000000,
+          "Medical expense due accident": 60000000
+        },
+        "prices": {
+          "7-9": 17568000,
+          "10-18": 16812000,
+          "19-30": 16056000,
+          "31-40": 17568000,
+          "41-50": 18324000,
+          "51-60": 19080000
+        }
+      }
+    ]
+  },
+  {
+    "company": "Bao Long Insurance",
+    "packages": [
+      {
+        "name_vi": "Gói Đồng",
+        "name_en": "Bronze Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 224000000,
+          "Quyền lợi Ngoại trú": 6000000,
+          "Quyền lợi Nội trú": 100000000,
+          "Nha khoa": 3000000,
+          "Tai nạn cá nhân": 25000000,
+          "Sinh mạng cá nhân": 25000000
+        },
+        "benefits_en": {
+          "Total coverage": 224000000,
+          "Outpatient cover": 6000000,
+          "Inpatient cover": 100000000,
+          "Dental": 3000000,
+          "Personal accident": 25000000,
+          "Personal life": 25000000
+        },
+        "prices": {
+          "7-9": 1190700,
+          "10-18": 1134000,
+          "19-30": 1080000,
+          "31-40": 1188000,
+          "41-50": 1242000,
+          "51-60": 1296000
+        }
+      },
+      {
+        "name_vi": "Gói Bạc",
+        "name_en": "Silver Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 379000000,
+          "Quyền lợi Ngoại trú": 6000000,
+          "Quyền lợi Nội trú": 150000000,
+          "Nha khoa": 3000000,
+          "Tai nạn cá nhân": 100000000,
+          "Sinh mạng cá nhân": 50000000
+        },
+        "benefits_en": {
+          "Total coverage": 379000000,
+          "Outpatient cover": 6000000,
+          "Inpatient cover": 150000000,
+          "Dental": 3000000,
+          "Personal accident": 100000000,
+          "Personal life": 50000000
+        },
+        "prices": {
+          "7-9": 1714500,
+          "10-18": 1632960,
+          "19-30": 1555200,
+          "31-40": 1710720,
+          "41-50": 1788480,
+          "51-60": 1866240
+        }
+      },
+      {
+        "name_vi": "Gói Vàng",
+        "name_en": "Gold Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 690000000,
+          "Quyền lợi Ngoại trú": 10000000,
+          "Quyền lợi Nội trú": 250000000,
+          "Nha khoa": 5000000,
+          "Tai nạn cá nhân": 200000000,
+          "Sinh mạng cá nhân": 100000000
+        },
+        "benefits_en": {
+          "Total coverage": 690000000,
+          "Outpatient cover": 10000000,
+          "Inpatient cover": 250000000,
+          "Dental": 5000000,
+          "Personal accident": 200000000,
+          "Personal life": 100000000
+        },
+        "prices": {
+          "7-9": 2589300,
+          "10-18": 2466450,
+          "19-30": 2349000,
+          "31-40": 2583900,
+          "41-50": 2701350,
+          "51-60": 2818800
+        }
+      },
+      {
+        "name_vi": "Gói Bạch kim",
+        "name_en": "Platinum Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 1252500000,
+          "Quyền lợi Ngoại trú": 15000000,
+          "Quyền lợi Nội trú": 400000000,
+          "Nha khoa": 7500000,
+          "Tai nạn cá nhân": 400000000,
+          "Sinh mạng cá nhân": 200000000
+        },
+        "benefits_en": {
+          "Total coverage": 1252500000,
+          "Outpatient cover": 15000000,
+          "Inpatient cover": 400000000,
+          "Dental": 7500000,
+          "Personal accident": 400000000,
+          "Personal life": 200000000
+        },
+        "prices": {
+          "7-9": 3476700,
+          "10-18": 3311280,
+          "19-30": 3153600,
+          "31-40": 3468600,
+          "41-50": 3626640,
+          "51-60": 3784320
+        }
+      },
+      {
+        "name_vi": "Gói Kim Cương",
+        "name_en": "Diamond Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 2170000000,
+          "Quyền lợi Ngoại trú": 20000000,
+          "Quyền lợi Nội trú": 500000000,
+          "Nha khoa": 10000000,
+          "Tai nạn cá nhân": 800000000,
+          "Sinh mạng cá nhân": 400000000
+        },
+        "benefits_en": {
+          "Total coverage": 2170000000,
+          "Outpatient cover": 20000000,
+          "Inpatient cover": 500000000,
+          "Dental": 10000000,
+          "Personal accident": 800000000,
+          "Personal life": 400000000
+        },
+        "prices": {
+          "7-9": 4286700,
+          "10-18": 4082400,
+          "19-30": 3888000,
+          "31-40": 4276800,
+          "41-50": 4471200,
+          "51-60": 4665600
+        }
+      }
+    ]
+  },
+  {
+    "company": "Baoviet Insurance",
+    "packages": [
+      {
+        "name_vi": "Gói Đồng",
+        "name_en": "Bronze Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 93800000,
+          "Quyền lợi Ngoại trú": 2000000,
+          "Quyền lợi Nội trú": 40000000
+        },
+        "benefits_en": {
+          "Total coverage": 93800000,
+          "Outpatient cover": 2000000,
+          "Inpatient cover": 40000000
+        },
+        "prices": {
+          "7-9": 1188000,
+          "10-18": 1130220,
+          "19-30": 1076400,
+          "31-40": 1184040,
+          "41-50": 1237860,
+          "51-60": 1291680
+        }
+      },
+      {
+        "name_vi": "Gói Bạc",
+        "name_en": "Silver Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 137600000,
+          "Quyền lợi Ngoại trú": 3000000,
+          "Quyền lợi Nội trú": 60000000
+        },
+        "benefits_en": {
+          "Total coverage": 137600000,
+          "Outpatient cover": 3000000,
+          "Inpatient cover": 60000000
+        },
+        "prices": {
+          "7-9": 1710000,
+          "10-18": 1621620,
+          "19-30": 1544400,
+          "31-40": 1698840,
+          "41-50": 1776060,
+          "51-60": 1853280
+        }
+      },
+      {
+        "name_vi": "Gói Vàng",
+        "name_en": "Gold Package",
+        "benefits_vi": {
+          "Tổng số tiền bảo hiểm": 230000000,
+          "Quyền lợi Ngoại trú": 5000000,
+          "Quyền lợi Nội trú": 100000000
+        },
+        "benefits_en": {
+          "Total coverage": 230000000,
+          "Outpatient cover": 5000000,
+          "Inpatient cover": 100000000
+        },
+        "prices": {
+          "7-9": 2580300,
+          "10-18": 2457000,
+          "19-30": 2340000,
+          "31-40": 2574000,
+          "41-50": 2691000,
+          "51-60": 2808000
+        }
+      }
+    ]
+  }
+]

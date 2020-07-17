@@ -1,0 +1,256 @@
+export const vi = {
+  general: {
+    compare: "So sánh",
+    compulsory: "BH bắt buộc",
+    comprehensive: "BH toàn diện",
+    testimonials: "Lời của khách hàng",
+    email: "Email",
+    message: "Lời nhắn",
+    submit: "Gửi phản hồi",
+    continue: "Tiếp tục",
+    from: "Từ",
+    to: "Đến",
+    select: "Chọn",
+    points: "{0} điểm",
+    information: "Thông Tin Bảo Hiểm",
+    total: "Tổng phí BH: {0} VND / năm",
+    buy: "Mua Bảo Hiểm",
+    required: "Cần thiết",
+    step: "Bước {0} trên {1}",
+    pay: "Thanh Toán",
+    coverage: "Số tiền BH",
+    coverageSum: "triệu VND",
+    coverageLabel: "trên từng người / vụ / tài sản",
+    invalidEmail: "Email không hợp lệ",
+    startDate: "Ngày bắt đầu",
+    fullName: "Họ tên đầy đủ",
+    city: "Tỉnh / Thành phố",
+    address: "Địa chỉ thường trú",
+    delivery: "Địa chỉ liên lạc (hiện tại)",
+    phone: "Số điện thoại",
+    vehicleNumber: "Số xe",
+    vehicleOwnerName: "Tên chủ xe",
+    success: "Sự thành công",
+    price: "{0} VND",
+    incorrectDOB: "Ngày sinh không chính xác",
+    lang: "English",
+    phoneLengthError: "Số điện thoại phải dài 11 chữ số",
+    dobPlaceholder: "31/12/1980",
+    smthWentWrong: "đã xảy ra lỗi",
+    edit: "Biên tập",
+    newSearch: "Tìm kiếm mới",
+  },
+  navigation: {
+    home: "Trang Chủ",
+    carLiability: "BH Trách Nhiệm Xe Cơ Giới",
+    comprehensiveCar: "BH Xe Cơ Giới",
+    health: "BH Sức Khỏe",
+    feedback: "Gửi phản hồi cho chúng tôi",
+  },
+  main: {
+    carCivil: "BH TNDS  Xe Cơ Giới",
+    carInsurance: "BH Xe Cơ Giới",
+    health: "BH Sức khoẻ",
+  },
+  copyRight: {
+    privacyPolicy: "Chính Sách Bảo Mật",
+    termsAndConditions: "Điều Khoản Sử Dụng",
+    reserved: "© 2020. Bảo lưu mọi quyền",
+  },
+  footer: {
+    location:
+      "Toà nhà E.Town Central, số 11 Đoàn Văn Bơ, Phường 12, Quận 4, TP Hồ Chí Minh.",
+    email: "info@goinsurance.biz",
+  },
+  header: {
+    title: "Chọn gói bảo hiểm tốt nhất",
+    text:
+      "Tìm, so sánh các báo giá và chọn mua gói BH Xe Cơ giới giá tốt nhất.",
+    action: "Chọn",
+    carLiabilityTitle: "Chọn gói BH xe cơ giới tốt nhất",
+    carLiabilityAction: "So sánh",
+  },
+  feedback: {
+    title: "Phản hồi",
+    subTitle: "Chúng tôi rất muốn lắng nghe ý kiến của bạn!",
+  },
+  description: {
+    search: "Tìm trên hơn 12 {0}tổ chức Bảo hiểm {1}tốt nhất Việt Nam",
+    compare: "So sánh, chọn và mua Bảo hiểm online",
+    promotions: "Nhận các tin {0}khuyến mãi {1}sớm nhất",
+  },
+  comprehensiveCar: {
+    information: "Thông Tin Bảo Hiểm",
+    title: "Chọn bảo hiểm xe hơi tốt nhất",
+    quotes: "Nhận báo giá tốt nhất",
+    carBrand: "Hãng sản xuất xe",
+    model: "Dòng xe",
+    year: "Năm sản xuất",
+    sumInsured: "Tổng tiền BH",
+    valueByMarket: "Trị giá:",
+    valueByMarketPlaceholder: "1,100 million VND",
+    extendedTerms: "Các điều kiện thêm",
+    newPlacements: "Phụ tùng vật tư thay mới",
+    theftForParts: "Mất cắp bộ phận",
+    waterDamage: "Thiệt hại động cơ do thủy kích",
+    repairsInBrandedGarage: "Sửa chữa tại cơ sở của hãng",
+    territoryVietnam: "Lãnh thổ Việt Nam hoặc nước ngoài (ASEAN + Trung Quốc)",
+    specialModification: "Các hoán cải đặc biệt",
+    additionalInsurances: "Các bảo hiểm thêm",
+    carCivilLiabilityInsurance: "BH TNDS  Xe Cơ Giới",
+    voluntaryCivilLiabilityInsurance: "BH TNDS Tự Nguyện",
+    personalAccidentInsurance: "BH Tai Nạn Lái, Phụ Xe và Người Ngồi Trên Xe",
+    priceShouldBeMoreThan0: "Giá phải hơn 0",
+    priceShouldBe: "Giá phải từ {0} đến {1} VND",
+    total: "Tổng phí BH: {0} VND / năm",
+    confirmationOfIntegrity:
+      "Tôi cam kết đến giờ khai báo, xe chưa gặp tai nạn và vẫn hoạt động bình thường.",
+    companies: {
+      seats: "chỗ ngồi",
+      personalAccidentInsurance: "Bảo hiểm tai nạn cá nhân",
+    },
+    carPrice: "VND",
+    deductibleLabel: "Khấu trừ:",
+    deductiblePlaceholder: "0 VDN",
+    deductibleNote:
+      "Bạn sẵn sàng chịu mức khấu trừ trong trường hợp tổn thất đến bao nhiêu?",
+  },
+  health: {
+    title: "Chọn bảo hiểm tốt nhất",
+    titleRange: "Tổng bồi thường theo triệu đồng",
+    subTitle:
+      "Tìm, so sánh các báo giá và chọn mua gói BH sức khỏe giá tốt nhất.",
+    rangePrice: "Số tiền BH từ {0} đến {1} triệu VND",
+    yearsOld: "Tuổi {0}",
+    birthDate: "Ngày Sinh",
+  },
+  carLiability: {
+    title: "BH TNDS Xe Cơ Giới",
+    text: "Nhận báo giá tốt nhất",
+    purpose: "Mục đích sử dụng",
+    personal: "Xe cá nhân / Xe không kinh doanh vận tải",
+    commercial: "Xe kinh doanh vận tải chở người",
+    trucks: "Xe vận tải chở hàng",
+    type: "Loại xe",
+    taxi: "Taxi",
+    sedan: "Xe mui kín",
+    SUV: "SUV",
+    convertible: "Chuyển đổi",
+    pickup: "Xe bán tải",
+    seats: "Số ghế",
+    seatsNumber: "chỗ ngồi",
+    action: "So sánh",
+    tonnage: "Trọng tải",
+    step2: {
+      title: "BH Trách Nhiệm Xe Cơ Giới",
+      text:
+        "Để cẩn thận hơn, hãy cân nhắc một trong những sự lựa chọn dưới đây.",
+      personalInsurance: "BH Tai Nạn Lái, Phụ Xe và Người Ngồi Trên Xe",
+      voluntaryInsurance: "BH TNDS Tự Nguyện Xe Cơ Giới ",
+      action: "So sánh",
+      desktopAction: "Tiếp tục",
+      selectNote: "trên từng người / vụ / tài sản",
+      participant: "{0} người tham gia",
+      participants: "{0} những người tham gia",
+      personalInsuranceCoveragePlaceholder: "Số tiền BH",
+      personalNumberPlaceholder: "Số người tham gia",
+      voluntaryAmountPlaceholder: "Số tiền BH",
+    },
+    results: {
+      title: "BH TNDS Xe Cơ Giới",
+      personalInsurance: "BH Tai Nạn Con Người x{0}",
+      voluntaryInsurance: "BH TNDS Tự Nguyện Xe Cơ Giới",
+      personalPurpose: "Xe thông thường không có mục đích thương mại",
+      numberOfSeats: "{0} Số ghế",
+    },
+    form: {
+      title: "Thông Tin Bảo Hiểm",
+      total: "Tổng phí BH: {0} VND / năm",
+      owner: "Tên chủ xe",
+      number: "Số xe",
+      email: "E-mail",
+    },
+  },
+  tariffCard: {
+    total: "{0} VND / năm",
+    propertyDamageLimit: "Thiệt Hại về Tài Sản Tối Đa",
+    bodilyInjuryLimit: "Thiệt Hại về Người Tối Đa",
+    voluntaryCivilLiabilityInsurance: "BH TNDS Tự Nguyện Xe Cơ Giới ",
+    personalAccidentInsurance: "BH Tai nạn Cá nhân theo từng người vụ",
+    coverage: "Số tiền BH",
+    deductible: "Khấu trừ",
+    carLiability: "BH TNDS  Xe Cơ Giới",
+    years: "Tuổi {0}",
+    comprehensiveHealthInsurance: "Bảo hiểm y tế toàn diện {0}",
+    personalAccidentInsuranceTooltip:
+      "Bồi thường thiệt hại thân thể đối với lái xe và những người được chở trên xe khi xe đang tham gia giao thông",
+    deductibleTooltip:
+      "Áp dụng mức khấu trừ {0} tổn thất thuộc trách nhiệm bảo hiểm. (áp dụng trên số tiền bồi thường sẽ trả)",
+    bodilyInjuryLimitTooltip:
+      "Bồi thường thiệt hại về thân thể, tính mạng và tài sản đối với:{1}- Hành khách theo hợp đồng vận chuyển do xe khách gây ra.",
+    voluntaryCivilLiabilityInsuranceTooltip:
+      "Bồi thường thiệt hại về thân thể, tính mạng và tài sản đối với bên thứ ba do xe ô tô gây ra; chi trả vượt mức trách nhiệm dân sự bắt buộc",
+    coverageTooltip:
+      "Bồi thường thiệt hại vật chất xe do:{1}- Tai nạn bất ngờ, ngoài sự kiểm soát của chủ xe trong những trường hợp: đâm va, lật, đổ; rơi chìm; hỏa hoạn, cháy, nổ; bị các vật thể khác rơi, va chạm vào;{2}- Các tai họa bất khả kháng do thiên nhiên: bão, lũ, sụt lở, sét đánh, động đất, mưa đá, sóng thần;{3}- Mất cắp, mất cướp toàn bộ xe (bồi thường toàn bộ).{4}Ngoài ra Bảo Việt còn thanh toán các chi phí cần thiết, hợp lý phát sinh nhằm ngăn ngừa hạn chế tổn thất tăng thêm và đưa xe thiệt hại đến nơi sửa chữa, giám định",
+    carLiabilityTooltip:
+      "1. Đối với thiệt hại về người: {1}Bồi thường chi phí hợp lý cho việc cứu chữa, bồi dưỡng phục hồi sức khỏe, thu nhập thực tế bị mất hoặc giảm sút, bồi dưỡng, chăm sóc người bị hại trước khi chết, mai táng phí hợp lý...theo mức độ lỗi của chủ xe cơ giới.;{2}2. Đối với thiệt hại tài sản: bồi thường tiệt hại thực tế theo mức độ lỗi của chủ xe cơ giới.;{3}3. Chi phí cần thiết và hợp lý nhằm ngăn ngừa, hạn chế tổn thất liên quan tới vụ tai nạn mà chủ xe cơ giới đã chi ra.",
+    propertyDamageLimitTooltip:
+      "Bồi thường thiệt hại về thân thể, tính mạng và tài sản đối với:{1}- Bên thứ ba do xe ô tô gây ra.",
+  },
+  informationForm: {
+    personalAccidentInsurance:
+      "Bồi thường thiệt hại thân thể đối với lái xe và những người được chở trên xe khi xe đang tham gia giao thông",
+    deductible:
+      "Áp dụng mức khấu trừ {0} tổn thất thuộc trách nhiệm bảo hiểm. (áp dụng trên số tiền bồi thường sẽ trả)",
+    bodilyInjuryLimit:
+      "Bồi thường thiệt hại về thân thể, tính mạng và tài sản đối với:{br}- Hành khách theo hợp đồng vận chuyển do xe khách gây ra.",
+    voluntaryCivilLiabilityInsurance:
+      "Bồi thường thiệt hại về thân thể, tính mạng và tài sản đối với bên thứ ba do xe ô tô gây ra; chi trả vượt mức trách nhiệm dân sự bắt buộc",
+    MPDCoverage:
+      "Bồi thường thiệt hại vật chất xe do:{0}- Tai nạn bất ngờ, ngoài sự kiểm soát của chủ xe trong những trường hợp: đâm va, lật, đổ; rơi chìm; hỏa hoạn, cháy, nổ; bị các vật thể khác rơi, va chạm vào;{1}- Các tai họa bất khả kháng do thiên nhiên: bão, lũ, sụt lở, sét đánh, động đất, mưa đá, sóng thần;{2}- Mất cắp, mất cướp toàn bộ xe (bồi thường toàn bộ).{3}Ngoài ra Bảo Việt còn thanh toán các chi phí cần thiết, hợp lý phát sinh nhằm ngăn ngừa hạn chế tổn thất tăng thêm và đưa xe thiệt hại đến nơi sửa chữa, giám định",
+    carLiability:
+      "- Đối với thiệt hại về người: {0}Bồi thường chi phí hợp lý cho việc cứu chữa, bồi dưỡng phục hồi sức khỏe, thu nhập thực tế bị mất hoặc giảm sút, bồi dưỡng, chăm sóc người bị hại trước khi chết, mai táng phí hợp lý...theo mức độ lỗi của chủ xe cơ giới.;{1}- Đối với thiệt hại tài sản: bồi thường tiệt hại thực tế theo mức độ lỗi của chủ xe cơ giới.;{2}- Chi phí cần thiết và hợp lý nhằm ngăn ngừa, hạn chế tổn thất liên quan tới vụ tai nạn mà chủ xe cơ giới đã chi ra.",
+    propertyDamageLimit:
+      "Bồi thường thiệt hại về thân thể, tính mạng và tài sản đối với:{br}- Bên thứ ba do xe ô tô gây ra.",
+    comprehensiveInsuranceBy: "Bảo hiểm xe toàn diện bởi {company}",
+    liabilityInsuranceBy: "Bảo hiểm trách nhiệm xe hơi của {company}",
+    fullDetails: "Chi Tiết Đầy Đủ",
+    note:
+      "Một bản đơn bảo hiểm điện tử sẽ được gửi tới bạn sau khi bạn thanh toán phí bảo hiểm. Đơn bảo hiểm gốc và các tài liệu liên quan sẽ được gửi tới bạn trong vòng 3 đến 5 ngày tới địa chỉ đăng ký dưới đây.",
+    healthInfo:
+      "Bảo hiểm sức khỏe giúp giảm thiểu các chi phí y tế khám chữa bệnh khi bạn phải nhập viện hoặc đi khám chữa bệnh, bao gồm cả chi phí phẫu thuật. Bảo hiểm cũng có thể được mở rộng để bao gồm chi phí cho thai sản, khám chữa răng, hoặc các quyền lợi khác.",
+    newPlacements:
+      "Công ty BH sẽ bồi thường toàn bộ chi phí thay thế mới cho những bộ phận bị tổn thất cảu xe ô tô thuộc phạm vi bảo hiểm mà không áp dụng quy định khấu hao phụ tùng, vật tư thay mới tại Quy tắc bảo hiểm.",
+    theftForParts:
+      "Công ty BH nhận bảo hiểm và bồi thường cho tổn thất bộ phận của xe bị mất cắp, mất cướp mà không áp dụng loại trừ bảo hiểm tại Quy tắc bảo hiểm. ",
+    waterDamage:
+      "Công ty BH nhận bảo hiểm và bồi thường cho xe bị thiệt hại động cơ (bị thủy kích) do lỗi vô ý của lái xe điều khiển xe đi vào đường ngập nước, khu vực bị ngập nước mà không áp dụng loại trừ bảo hiểm tại Quy tắc bảo hiểm.",
+    repairsInBrandedGarage:
+      "Ngoài ra Chủ xe/Người được bảo hiểm có quyền yêu cầu đưa xe vào sửa chữa tại các cơ sở sửa chữa không chính hãng với điều kiện chi phí sửa chữa, thay thế thấp hơn chi phí sửa chữa chính hàng phù hợp với chủng loại xe được bảo hiểm. ",
+    specialModification:
+      "Công ty BH nhận bảo hiểm và bồi thường cho tổn thất của các thiết bị, phụ kiện lắp thêm ngoài thiết kế tiêu chuẩn của nhà sản xuất t thuộc phạm vi bảo hiểm mà không áp dụng loại trừ bảo hiểm tại Quy tắc bảo hiểm.",
+  },
+  sorry: {
+    title: "Rất xin lỗi",
+    titleMobile: "Rất xin lỗi...",
+    description:
+      "Anh/Chị {0} thân mến! Chúng tôi rất tiếc rằng hiện tại dịch vụ đang được hoàn thiện. Chúng tôi cam kết sẽ gửi tặng quý khách chiết khấu cho các báo giá BH xe cơ giới tốt nhất khi dịch vụ trở lại. ",
+    giveFeedback: "Gửi phản hồi",
+  },
+  payment: {
+    title: "Phương thức thanh toán",
+    choose: "Chọn ...",
+    online: "Thanh toán trực tuyến qua Thẻ quốc tế",
+    atm: "Thanh toán trực tuyến qua Thẻ ATM",
+    momo: "Ví điện tử MoMo",
+    samsung: "Samsung pay",
+    apple: "Apple pay",
+  },
+  terms: {
+    privacyPolicy: "CHÍNH SÁCH BẢO MẬT",
+    lastUpdatePrivacyPolicy: "Last update on Jun 01, 2020",
+    cookiePolicy: "Cookie Policy",
+    title: "Điều khoản {0} và Điều kiện",
+    lastUpdate: "Last update on Feb 17, 2020",
+  },
+}

@@ -1,0 +1,25 @@
+export const colors = {
+  primary: "#308FFF",
+  text: ["#3E3D3D", "#565656"],
+  blues: [
+    "#308FFF",
+    "#2067BB",
+    "rgba(48, 143, 255, 0.4)",
+    "#1773CE",
+    "rgba(48, 143, 255, 0.15)",
+  ],
+  white: "#FFFFFF",
+  greens: ["#13D5A6", "#10B78F"],
+  blacks: ["#000000", "rgba(0, 0, 0, 0.66)"],
+  greys: [
+    "#DBDEE7",
+    "rgba(0, 0, 0, 0.35)",
+    "#D8EAE6",
+    "#CCCFD8",
+    "rgba(0, 0, 0, 0.6)",
+    "#979797",
+  ],
+  red: "#F95A7C",
+  transparent: "transparent",
+  error: "#EB5757",
+}

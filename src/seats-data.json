@@ -1,0 +1,51 @@
+{
+  "personal": [
+    { "seats": 4, "premium": 437000 },
+    { "seats": 5, "premium": 437000 },
+    { "seats": 6, "premium": 794000 },
+    { "seats": 7, "premium": 794000 },
+    { "seats": 8, "premium": 794000 },
+    { "seats": 15, "premium": 1270000 },
+    { "seats": 16, "premium": 1270000 },
+    { "seats": 24, "premium": 1270000 },
+    { "seats": 25, "premium": 1825000 },
+    { "seats": 30, "premium": 1825000 },
+    { "seats": 40, "premium": 1825000 },
+    { "seats": 50, "premium": 1825000 },
+    { "seats": 54, "premium": 1825000 }
+  ],
+  "pickup": [
+    { "seats": 4, "premium": 933000 },
+    { "seats": 5, "premium": 933000 },
+    { "seats": 6, "premium": 933000 },
+    { "seats": 7, "premium": 933000 },
+    { "seats": 8, "premium": 933000 }
+  ],
+  "taxi": [
+    { "seats": 5, "premium": 1285200 },
+    { "seats": 7, "premium": 1836000 },
+    { "seats": 8, "premium": 2130100 }
+  ],
+  "commercial": [
+    { "seats": 4, "premium": 756000 },
+    { "seats": 5, "premium": 756000 },
+    { "seats": 6, "premium": 929000 },
+    { "seats": 7, "premium": 1080000 },
+    { "seats": 8, "premium": 1253000 },
+    { "seats": 15, "premium": 2394000 },
+    { "seats": 16, "premium": 3054000 },
+    { "seats": 24, "premium": 4632000 },
+    { "seats": 25, "premium": 4813000 },
+    { "seats": 30, "premium": 4963000 },
+    { "seats": 40, "premium": 5263000 },
+    { "seats": 50, "premium": 5563000 },
+    { "seats": 54, "premium": 5683000 }
+  ],
+  "trucks": [
+    { "tonnage": "Under 3 tons", "premium": 853000 },
+    { "tonnage": "3-8 tons", "premium": 1660000 },
+    { "tonnage": "8-15 tons", "premium": 2746000 },
+    { "tonnage": "Above 15 tons", "premium": 3200000 },
+    { "tonnage": "Tractors", "premium": 4800000 }
+  ]
+}
